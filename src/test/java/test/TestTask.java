@@ -1,4 +1,5 @@
 package test;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -9,7 +10,9 @@ import pages.WelcomePage;
 import pages.GosUslugi;
 import pages.Icons;
 import pages.Pixenio;
+
 import java.time.Duration;
+
 import static framework.Browser.driver;
 
 public class TestTask extends BaseTest {

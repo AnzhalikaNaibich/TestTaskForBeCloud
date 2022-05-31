@@ -1,4 +1,5 @@
 package test;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -12,6 +13,7 @@ public class BaseTest {
         WebDriver driver = Browser.getDriver();
         driver.manage().window().maximize();
     }
+
     @AfterTest
     public void afterTest() {
         WebDriver driver = Browser.getDriver();

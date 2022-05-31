@@ -36,13 +36,11 @@ public class TestTask extends BaseTest {
     @Test
     public void thirdTestWait() {
         WelcomePage welcomePage = new WelcomePage(driver);
-        welcomePage.open("https://www.gosuslugi.ru/");
+        welcomePage.open("https://www.gosuslugi.ru");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("app-portal")));
         GosUslugi gosuslugi = new GosUslugi(driver);
         gosuslugi.checkWaitDisplayed();
         Assert.assertEquals(driver.getCurrentUrl(), "https://esia.gosuslugi.ru/login/", "page for authorization don't open");
-
-        driver.quit();
     }
 }

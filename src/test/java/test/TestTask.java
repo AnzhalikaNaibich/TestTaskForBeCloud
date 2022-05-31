@@ -25,7 +25,6 @@ public class TestTask extends BaseTest {
         icon.checkClickEmoji();
         Assert.assertEquals(driver.getCurrentUrl(), "https://icons8.com/icons/emoji", "emoji page don't open");
     }
-
     @Test
     public void secondTestAuth() {
         WelcomePage welcomePage = new WelcomePage(driver);
@@ -35,7 +34,6 @@ public class TestTask extends BaseTest {
         WebElement secondPage = driver.findElement(By.className("steps"));
         Assert.assertTrue(secondPage.isDisplayed(), "you don't authorization on web-site");
     }
-
     @Test
     public void thirdTestWait() {
         WelcomePage welcomePage = new WelcomePage(driver);

@@ -13,7 +13,6 @@ public class BaseTest {
         WebDriver driver = Browser.getDriver();
         driver.manage().window().maximize();
     }
-
     @AfterTest
     public void afterTest() {
         WebDriver driver = Browser.getDriver();
